@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Single Price Grid Component</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Karla:wght@400;700&family=Roboto+Slab&display=swap" rel="stylesheet">
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    body{
+      background-color: hsl(204, 43%, 93%);
+    }
+    .boxes{
+      margin: auto;
+      width: 70%;
+      height: 400px;
+      position: relative;
+      top: 200px;
+    }
+    .box1, .box2, .box3{
+      position: absolute;
+      left: 25%;
+      height: 200px;
+    }
+    .box1{
+      width: 50%;
+      background-color: white;
+      border-radius: 10px 10px 0px 0px;
+    }
+    .box2{
+      background-color: rgba(43,179,177,255);
+      top: 200px;
+      width: 26%;
+      border-radius: 0px 0px 0px 10px;
+    }
+    .box3{
+      width: 25%;
+      top: 200px;
+      left: 50%;
+      background-color: rgba(74,190,189,255);
+      border-radius: 0px 0px 10px 0px;
+    }
+    button{
+      background-color: hsl(71, 73%, 54%);
+      color: white;
+      width: 70%;
+      height: 20%;
+      border: none;
+      position: absolute;
+      bottom: 15%;
+      left: 10%;
+      border-radius: 10px;
+      cursor: pointer;
+    }
+    .title{
+      margin: 5% 25px;
+    }
+    h2, p, h3, h2, h5, h6{
+      font-family: 'Karla', sans-serif;
+    }
+    p, h1, h2, h5,h6{
+      margin: 5px 25px;
+    }
+    h5, h6{
+      color: hsl(204, 43%, 93%)
+    }
+    .tiny{
+      position: absolute;
+      top: 27%;
+      right: 43%;
+    }
+    .cyan{
+      color: hsl(179, 62%, 43%);
+    }
+    .yellow{
+      color: hsl(71, 73%, 54%)
+    }
+    .grayishblue{
+      color: hsl(218, 22%, 67%)
+    }
+    .lightgray{
+      color: hsl(204, 43%, 93%);
+    }
+
+    .attribution { font-size: 11px; text-align: unset; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <div class="boxes">
+    <div class="box1">
+      <h2 class="cyan title">
+        Join our community
+      </h2>
+      <p class="yellow">30-day, hassle-free money back guarantee</p>
+      <p class="grayishblue">Gain access to our full library of tutorials along with expert code reviews.</p>      
+      <p class="grayishblue">Perfect for any developers who are serious about honing their skills.</p>
+    </div>
+    <div class="box2">
+      <h3 class="lightgray title">Monthly Subscription</h3>
+      <h2 class="lightgray">&dollar;29</h2> <p class="tiny lightgray"> per month</p>
+      <p class="lightgray">Full access for less than &dollar;1 a day</p>
+      <button>Sign up</button>
+    </div>
+    <div class="box3">
+      <h3 class="title lightgray">Why us</h3>
+      <h6>Tutorials by industry experts</h6>
+      <h6>Peer &amp; expert code review</h6>
+      <h6>Coding exercises</h6>
+      <h6>Access to our GitHub repos</h6>
+      <h6>Community forum</h6>
+      <h6>Flashcard decks</h6>
+      <h6>New videos every week</h6>
+
+    </div>
+  </div>
+  <footer>
+    <p class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Nikodem W</a>.
+    </p>
+  </footer>
+</body>
+</html>
